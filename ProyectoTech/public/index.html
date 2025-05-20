@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transformación Energía</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- AOS (Animate On Scroll) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="/src/styles.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png" />
+
+
+
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="70" tabindex="0">
+
+  <!-- Navbar -->
+  <nav id="mainNav" class="navbar navbar-expand-lg fixed-top navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <i class="bi bi-cloud "></i>  Transformación energía justa
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#about">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+          <li class="nav-item"><a class="nav-link"href="#dashboard">Datos Historicos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#graficos">Gráficos</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>00
+
+  <!-- Header -->
+   <div class="fondo">
+  
+  
+  <!-- About -->
+  
+  <section id="about">
+    <div class="container" data-aos="fade-up">
+      <h2 style="color: rgb(234, 234, 234);text-shadow:  1px 1px 3px rgb(0, 0, 0); text-align: center;">Transformando la energía, protegiendo el futuro</h2>
+      <p style="color: rgb(244, 244, 244); text-align: justify; padding: 5px; text-shadow:  1px 1px 3px rgb(0, 0, 0);">
+        Desde la Revolución Industrial, el uso de combustibles fósiles ha generado graves impactos en el clima y la salud. Hoy más que nunca, es urgente avanzar hacia fuentes de energía más limpias. Las energías renovables son clave para descarbonizar el sistema energético global y proteger nuestro planeta para las generaciones futuras.
+      </p>
+</div>
+
+  </section>
+
+  <!-- Galería -->
+  <section id="galeria">
+    <div class="container">
+    <h2 class="text-center mb-5" data-aos="zoom-in" style="color: rgb(234, 234, 234); text-shadow:  1px 1px 3px rgb(0, 0, 0);">Ecosistemas</h2>
+    <div class="d-flex justify-content-center gap-4 flex-wrap">
+      
+      <div class="flip-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="img/yellowstone-4689087_1920.jpg" alt="Imagen 1" class="img-fluid rounded">
+          </div>
+          <div class="flip-card-back d-flex align-items-center justify-content-center rounded">
+            <p class="text-white m-2 " style="text-shadow: 1px 1px 3px rgb(0, 0, 0);" > 
+              La fuerza de la tierra se manifiesta en estos paisajes termales,
+              donde el calor y los minerales pintan el suelo con colores únicos.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="img/waterfall-7289267_1920.jpg" alt="Imagen 2" class="img-fluid rounded">
+          </div>
+          <div class="flip-card-back d-flex align-items-center justify-content-center rounded">
+            <p class="text-white m-2" style="text-shadow: 1px 1px 3px rgb(0, 0, 0);">
+              Las aguas fluyen con vida entre piedras y raíces,
+              recordándonos la belleza serena de la naturaleza en su estado más puro.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="img/sunrise-3579931_1920.jpg" alt="Imagen 3" class="img-fluid rounded">
+          </div>
+          <div class="flip-card-back d-flex align-items-center justify-content-center rounded">
+            <p class="text-white m-2" style="text-shadow: 1px 1px 3px rgb(0, 0, 0);">
+              Cuando el sol se despide, la energía del viento toma el relevo,
+              iluminando el horizonte con esperanza y sostenibilidad.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+    <div id="root"></div>
+    <footer class="pie_tamal">@2025 Luis Care Lombriz</footer>
+  </section>
+  </div>
+  
+  
+  </div>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

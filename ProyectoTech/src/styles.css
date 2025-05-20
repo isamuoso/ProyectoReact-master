@@ -1,0 +1,302 @@
+body {
+  position: relative;
+  text-shadow: 1px 1px 3px rgba(155, 155, 155, 0.637);
+  font-weight: bold;
+  font-family: sans-serif;
+  
+}
+
+section {
+  padding: 40px 0;
+}
+
+header {
+  
+  color: rgb(16, 15, 15);
+  padding: 105px 0;
+}
+
+.navbar {
+  background-color: rgb(0, 0, 0);
+}
+
+.navbar-nav .nav-link {
+  color: #fff;
+}
+
+.navbar-nav .nav-link.active {
+  color: #f8f9fa;
+  font-weight: bold;
+}
+
+/* Animación flotante para imágenes */
+.float-image {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+.fondo {
+   background-image: url(../public/img/bg3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Estilos personalizados para la tabla de datos históricos */
+.table thead th {
+  background-color: #198754;
+  color: #fff;
+  text-align: center;
+}
+
+.table tbody td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.card {
+  box-shadow: 0 2px 8px rgb(1, 0, 0);
+}
+
+.img {
+  float: left;
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+/* === Flip Card Galería === */
+.flip-card {
+  background-color: transparent;
+  width: 250px;
+  height: 250px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.flip-card-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.flip-card-back {
+  background: rgb(0, 0, 0, 0.2);
+  font-family: sans-serif;
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  text-align: center;
+}
+
+#welcome{
+  background-color: rgb(218, 247, 166, 0.3);
+}
+
+#graficos{
+  background-color: rgb(255, 255, 255,);
+  color: rgb(236, 236, 236);
+  text-shadow: 1px 1px 3px rgb(0, 0, 0);
+  font-family: sans-serif;
+  
+
+}
+.sombra-texto {
+  text-shadow: 1px 1px 3px rgb(0, 0, 0);
+  font-weight: bold;
+}
+#formulario{
+  background-color: rgb(255, 255, 255,0);
+  color: rgb(236, 236, 236);
+  text-shadow: 1px 1px 3px rgb(0, 0, 0);
+  font-family: sans-serif;
+  border-color: white;
+
+}
+
+.pie_tamal{
+  background-color: rgb(255, 255, 255,0);
+  color: rgb(236, 236, 236);
+  text-shadow: 1px 1px 3px rgb(0, 0, 0);
+  font-family: sans-serif;
+  border-color: white;
+  text-align: center;
+}
+.cuadro_estimaciones{
+ color: rgb(255, 255, 255);
+ text-shadow: 1px 1px 3px rgb(255, 0, 0);
+
+  
+  
+}
+
+
+/* Contenedor fullscreen que cubre toda la pantalla con fondo azul */
+.earth {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff; /* Fondo azul */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Para estar sobre todo */
+}
+
+/* Animación de la tierra */
+.earth-loader {
+  --watercolor: #3344c1;
+  --landcolor: #7cc133;
+  width: 10em;
+  height: 10em;
+  background-color: var(--watercolor);
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow:
+    inset 0em 0.5em rgba(255, 255, 255, 0.25),
+    inset 0em -0.5em rgba(0, 0, 0, 0.25);
+  border: solid 0.15em white;
+  animation: startround 1s forwards;
+}
+
+/* Animaciones y posiciones de los SVG */
+.earth-loader svg:nth-child(1) {
+  position: absolute;
+  bottom: -2em;
+  width: 7em;
+  height: auto;
+  animation: round1 3.5s infinite linear;
+}
+
+.earth-loader svg:nth-child(2) {
+  position: absolute;
+  top: -3em;
+  width: 7em;
+  height: auto;
+  animation: round1 3.5s infinite linear;
+}
+
+.earth-loader svg:nth-child(3) {
+  position: absolute;
+  top: -2.5em;
+  width: 7em;
+  height: auto;
+  animation: round2 3.5s infinite linear;
+}
+
+.earth-loader svg:nth-child(4) {
+  position: absolute;
+  bottom: -2.2em;
+  width: 7em;
+  height: auto;
+  animation: round2 3.5s infinite linear ;
+}
+
+
+
+@keyframes round1 {
+  0% {
+    left: -2em;
+    opacity: 100%;
+    transform: skewX(0deg) rotate(0deg);
+  }
+  30% {
+    left: -6em;
+    opacity: 100%;
+    transform: skewX(-25deg) rotate(25deg);
+  }
+  31% {
+    left: -6em;
+    opacity: 0%;
+    transform: skewX(-25deg) rotate(25deg);
+  }
+  35% {
+    left: 7em;
+    opacity: 0%;
+    transform: skewX(25deg) rotate(-25deg);
+  }
+  45% {
+    left: 7em;
+    opacity: 100%;
+    transform: skewX(25deg) rotate(-25deg);
+  }
+  100% {
+    left: -2em;
+    opacity: 100%;
+    transform: skewX(0deg) rotate(0deg);
+  }
+}
+
+@keyframes round2 {
+  0% {
+    left: 5em;
+    opacity: 100%;
+    transform: skewX(0deg) rotate(0deg);
+  }
+  75% {
+    left: -7em;
+    opacity: 100%;
+    transform: skewX(-25deg) rotate(25deg);
+  }
+  76% {
+    left: -7em;
+    opacity: 0%;
+    transform: skewX(-25deg) rotate(25deg);
+  }
+  77% {
+    left: 8em;
+    opacity: 0%;
+    transform: skewX(25deg) rotate(-25deg);
+  }
+  80% {
+    left: 8em;
+    opacity: 100%;
+    transform: skewX(25deg) rotate(-25deg);
+  }
+  100% {
+    left: 5em;
+    opacity: 100%;
+    transform: skewX(0deg) rotate(0deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+
